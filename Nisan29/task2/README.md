@@ -17,10 +17,10 @@ All applications run on the virtual machine as a container.
 
 # Prerequisites
 
-    Vagrant 2.2.15 
-    Virtualbox 6.1.18 
-    Docker
-    Docker-compose 
+    Vagrant        2.2.15 
+    Virtualbox     6.1.18 
+    Docker         20.10.6
+    Docker-compose 1.25
  
 # Installation
 
