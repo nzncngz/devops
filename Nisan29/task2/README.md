@@ -54,7 +54,7 @@ roles/docker/tasks folder in the following files:
 
 | Name           |   Description                         
 | -------------  |   :-------------:          
-| wordpress.yml  |   file usefull for 
+| wordpress.yml  |   via file wordpress enviroment variable
 
 
 # Result
