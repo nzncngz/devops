@@ -19,9 +19,11 @@ Lab environment on below
 creating a virtual machine(centos 7 OS) and updating with vagrant on virtualbox
 add second disk(size 10GB) on vm
 
-{% filename %}$adduser nazan.cengiz{% endfilename %}
-$ 
-$ passwd  nazan.cengiz
+
+```bat
+adduser nazan.cengiz
+passwd  nazan.cengiz
+```
 $ echo "nazan.cengiz  ALL=(ALL:ALL) ALL" >>  /etc/sudoers
 $ usermod -aG sudo nazan.cengiz
 
