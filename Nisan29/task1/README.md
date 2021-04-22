@@ -38,6 +38,7 @@ $ lsblk
 ``` bat  
 $ lsblk 
 ```
+![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task1/results/later_disk_adding.png)
 
 ``` bat  
 $ su nazan.cengiz
