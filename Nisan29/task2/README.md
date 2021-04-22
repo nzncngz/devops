@@ -61,6 +61,12 @@ roles/docker/tasks folder in the following files:
 
 ![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task2/postman_header_control.png)
 
+# Reference
+
+https://github.com/bilalcaliskan/vagrant-ansible-lab/
+
+https://github.com/jamesattard/docker-ansible-wordpress
+
 
 
 
