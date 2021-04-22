@@ -26,9 +26,9 @@ All applications run on the virtual machine as a container.
 
 git clone https://github.com/nzncngz/devops.git
 
-<!-- vm creating --> 
+vm creating 
 
-vagrant up &
+$ vagrant up &
 
 cd devops/Nisan29/task/ansible
 
