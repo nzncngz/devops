@@ -58,3 +58,4 @@ $ sudo chown nazan.cengiz: bootcamp/; sudo find / -iname "bootcamp.txt" -exec mv
 
 #show mounted and file
 
+![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task1/results/mount.png)
