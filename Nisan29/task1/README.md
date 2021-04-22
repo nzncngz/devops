@@ -42,35 +42,19 @@ $ lsblk
 
 ``` bat  
 $ su nazan.cengiz
-$ sudo fdisk /dev/sdb
-$ sudo mkdir bootcamp
-$ sudo mkfs.ext4 /dev/sdb1
-$ sudo mount /dev/sdb1 bootcamp/
-$ sudo nano /etc/fstab
-$ sudo /dev/sdb1    /home/nazan.cengiz/bootcamp/    ext4  defaults 0 0
-$ sudo mount -a
-$ reboot
-$ su nazan.cengiz
-$ cd /opt
-$ sudo mkdir bootcamp ; sudo touch bootcamp.txt  
+$ sudo fdisk /dev/sdb; sudo mkdir bootcamp; sudo mkfs.ext4 /dev/sdb1; sudo mount /dev/sdb1 bootcamp/
 
+$ sudo nano /etc/fstab
+/dev/sdb1    /home/nazan.cengiz/bootcamp/    ext4  defaults 0 0
+$ sudo mount -a; sudo reboot
+
+$ su nazan.cengiz
+$ cd /opt; sudo mkdir bootcamp ; cd bootcamp; sudo touch bootcamp.txt; sudo chown nazan.cengiz: bootcamp.txt; sudo echo "merhaba trendyol" >> bootcamp.txt
 $ sudo echo "merhaba trendyol" >> bootcamp.txt
 
-$ sudo su
-
-$ cd /home/nazan.cengiz 
-
-$ find / -iname "bootcamp.txt" -exec mv {} /home/nazan.cengiz/bootcamp/ \;
+$ sudo chown nazan.cengiz: bootcamp/; sudo find / -iname "bootcamp.txt" -exec mv {} /home/nazan.cengiz/bootcamp/ \;
 
 ``` 
 
+#show mounted and file
 
-###show file 
-``` bat  
-$ pwd
-``` 
-[root@localhost bootcamp]# pwd
-/home/nazan.cengiz/bootcamp
-
-[root@localhost bootcamp]# ls
-bootcamp.txt  lost+found
