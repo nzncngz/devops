@@ -65,7 +65,7 @@ roles/docker/tasks folder in the following files:
 # Result
 In incoming request if bootcamp = devops header it redirects to "Welcome Devops" static page
 
-![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task2/check_header.png)
+![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task2/results/check_header_with_postman.png)
 
 # Reference
 
