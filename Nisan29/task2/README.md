@@ -50,3 +50,17 @@ roles/docker/tasks folder in the following files:
 | -------------  |   :-------------:          
 | main.yml       |   install docker,docker compose and current user add to docker group    
 
+roles/docker/tasks folder in the following files:
+
+| Name           |   Description                         
+| -------------  |   :-------------:          
+| wordpress.yml  |   file usefull for 
+
+
+# Result
+
+![Vertical](/home/nzn/Pictures/application.png)
+
+
+
+
