@@ -38,7 +38,9 @@ ansible-playbook -i hosts wordpress.yml
 
 # Role Variables
 
-| Name       |   Description                    | OS      
-| ------------- |   :-------------:         | -----:  
-| control       |   Ansible Host            | centos7
-| wordpress     |   Wordpress, Mysql, Nginx | centos7 
+This role has multiple variables. The descriptions and defaults for all these variables can be found in the roles/wordpress-docker/tasks folder in the following files:
+
+| Name           |   Description                         
+| -------------  |   :-------------:          
+| main.yml       |   deploy WordPress Nginx virtual host           
+
