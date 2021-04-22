@@ -31,7 +31,7 @@ before add new disk
 ``` bat  
 $ lsblk 
 ```
-![Vertical](/home/nzn/Pictures/before_add_disk.png)
+![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task1/results/before_add_disk.png)
 
 
 #later adding new disk
