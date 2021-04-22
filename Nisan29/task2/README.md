@@ -42,5 +42,11 @@ This role has multiple variables. The descriptions and defaults for all these va
 
 | Name           |   Description                         
 | -------------  |   :-------------:          
-| main.yml       |   deploy WordPress Nginx virtual host           
+| main.yml       |   deploy WordPress Nginx virtual host  
+
+roles/docker/tasks folder in the following files:
+
+| Name           |   Description                         
+| -------------  |   :-------------:          
+| main.yml       |   install docker,docker compose and current user add to docker group    
 
