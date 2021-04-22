@@ -35,3 +35,10 @@ cd devops/Nisan29/task/ansible
 <!-- all application run  --> 
 
 ansible-playbook -i hosts wordpress.yml
+
+# Role Variables
+
+| Name       |   Description                    | OS      
+| ------------- |   :-------------:         | -----:  
+| control       |   Ansible Host            | centos7
+| wordpress     |   Wordpress, Mysql, Nginx | centos7 
