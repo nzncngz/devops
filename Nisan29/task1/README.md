@@ -50,7 +50,7 @@ $ sudo mount -a; sudo reboot
 
 $ su nazan.cengiz
 $ cd /opt; sudo mkdir bootcamp ; cd bootcamp; sudo touch bootcamp.txt; sudo chown nazan.cengiz: bootcamp.txt; sudo echo "merhaba trendyol" >> bootcamp.txt
-$ sudo echo "merhaba trendyol" >> bootcamp.txt
+$ sudo echo "merhaba trendyol" >> bootcamp.txt; cd /home/nazan.cengiz
 
 $ sudo chown nazan.cengiz: bootcamp/; sudo find / -iname "bootcamp.txt" -exec mv {} /home/nazan.cengiz/bootcamp/ \;
 
