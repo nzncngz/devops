@@ -16,28 +16,28 @@ Lab environment on below
     Virtualbox     6.1.18 
     Centos 7
     
+# Linux Commands  
+
 creating a virtual machine(centos 7 OS) and updating with vagrant on virtualbox
 add second disk(size 10GB) on vm
 
-# Linux Commands
+{% filename %}komut-satırı{% endfilename %}
 
-```bat
-$ adduser nazan.cengiz
+    $adduser nazan.cengiz
+
+
+$ 
 $ passwd  nazan.cengiz
 $ echo "nazan.cengiz  ALL=(ALL:ALL) ALL" >>  /etc/sudoers
 $ usermod -aG sudo nazan.cengiz
 
-```
-
 before add new disk
-```bat
-$ lsblk 
+[nazan.cengiz@localhost ~]$ lsblk 
 NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  40G  0 disk 
 └─sda1   8:1    0  40G  0 part /
 
 
-```
 #later adding new disk
 
 [nazan.cengiz@localhost ~]$ lsblk 
