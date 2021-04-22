@@ -23,7 +23,7 @@ add second disk(size 10GB) on vm
 
 ``` bat
 $ sudo -i
-$ adduser nazan.cengiz; passwd  nazan.cengiz; echo "nazan.cengiz  ALL=(ALL:ALL) ALL" >>  /etc/sudoers; usermod -aG root nazan.cengiz
+$ adduser nazan.cengiz; passwd  nazan.cengiz; echo "nazan.cengiz  ALL=(ALL:ALL) ALL" >>  /etc/sudoers; usermod -aG root nazan.cengiz; su nazan.cengiz
 
 ```
 
@@ -31,10 +31,7 @@ before add new disk
 ``` bat  
 $ lsblk 
 ```
-NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda      8:0    0  40G  0 disk 
-└─sda1   8:1    0  40G  0 part /
-
+![Vertical](/home/nzn/Pictures/before_add_disk.png)
 
 
 #later adding new disk
