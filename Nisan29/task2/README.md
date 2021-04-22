@@ -59,7 +59,7 @@ roles/docker/tasks folder in the following files:
 
 # Result
 
-![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task2/postman_header_control.png)
+![Vertical](https://github.com/nzncngz/devops/blob/main/Nisan29/task2/check_header.png)
 
 # Reference
 
