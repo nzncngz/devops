@@ -1,2 +1,0 @@
-# devops
-create work directory
