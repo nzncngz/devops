@@ -23,7 +23,7 @@ add second disk(size 10GB) on vm
 
 ``` bat
 $ sudo -i
-$ adduser nazan.cengiz; passwd  nazan.cengiz; echo "nazan.cengiz  ALL=(ALL:ALL) ALL" >>  /etc/sudoers; usermod -aG root nazan.cengiz; su nazan.cengiz
+$ adduser nazan.cengiz; passwd  nazan.cengiz; echo "nazan.cengiz  ALL=(ALL:ALL) ALL" >>  /etc/sudoers; usermod -aG wheel nazan.cengiz; su nazan.cengiz
 
 ```
 
