@@ -6,7 +6,7 @@ Lab environment on below
 
 
 | VM name        | OS      |  Networking     | 
-| -------------  | -----:  |
+| -------------: | -----:  |                 | 
 | vm1            | centos7 | 192.168.135.142 |
 
 
