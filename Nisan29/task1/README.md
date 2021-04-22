@@ -38,10 +38,6 @@ $ lsblk
 ``` bat  
 $ lsblk 
 ```
-NAME   MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda      8:0    0  40G  0 disk 
-└─sda1   8:1    0  40G  0 part /
-sdb      8:16   0  10G  0 disk
 
 ``` bat  
 $ su nazan.cengiz
