@@ -10,7 +10,12 @@ Lab environment on below
 | vm1           | centos7 | 192.168.135.142 |
 
 
+# Prerequisites
 
+    Vagrant        2.2.15 
+    Virtualbox     6.1.18 
+    Centos 7
+    
 creating a virtual machine(centos 7 OS) and updating with vagrant on virtualbox
 add second disk(size 10GB) on vm
 adduser nazan.cengiz
