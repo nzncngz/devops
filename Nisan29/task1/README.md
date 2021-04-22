@@ -3,7 +3,7 @@ add second disk(size 10GB) on vm
 adduser nazan.cengiz
 passwd  nazan.cengiz
 echo "nazan.cengiz  ALL=(ALL:ALL) ALL" >>  /etc/sudoers
-gpasswd -a nazan.cengiz wheel
+usermod -aG sudo nazan.cengiz
 
 #before add new disk
 [nazan.cengiz@localhost ~]$ lsblk 
