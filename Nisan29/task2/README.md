@@ -39,6 +39,7 @@ docker role with ansible galaxy
 
 ``` bat
 $ ansible-galaxy install -r requirements.yml
+$ ansible-galaxy install -r playbooks/install-docker-with-role.yml
 
 ```
 all application run  
