@@ -24,6 +24,8 @@ mysql:
     restart: always
 
 wordpress:
+    depends_on:
+    - mysql
     image: wordpress:{{ wp_version }}-php7.0-fpm
     ports:
       - '9000:9000'
