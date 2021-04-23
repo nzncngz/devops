@@ -3,9 +3,8 @@ nginx:
     ports:
         - '80:80'
     volumes:
-        - ./nginx:/etc/nginx/conf.d
-        - ./logs/nginx:/var/log/nginx
-        - ./wordpress:/var/www/html
+        - ./opt/docker/nginx:/etc/nginx/conf.d
+        - ./opt/docker/wordpress:/var/www/html
     links:
         - wordpress
     restart: always
@@ -30,7 +29,7 @@ wordpress:
     ports:
       - '9000:9000'
     volumes:
-      - ./wordpress:/var/www/html
+      - ./opt/docker/wordpress:/var/www/html
     environment:
       - WORDPRESS_DB_NAME={{ wp_db_name }}
       - WORDPRESS_TABLE_PREFIX={{ wp_db_tb_pre }}
