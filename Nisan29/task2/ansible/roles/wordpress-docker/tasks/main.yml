@@ -13,8 +13,6 @@
   - wp-db-data
   - nginx
   - logs/nginx
-  tags:
-    - dir_ops
 
 - name: create docker-compose.yml file
   file:
@@ -22,8 +20,6 @@
     owner: "{{ system_user }}"
     group: "{{ system_user }}"
     state: touch
-  tags:
-    - file_ops
 
 - name: deploy Docker Compose project for (Wordpress/MariaDB/Nginx containers)
   template:
@@ -32,8 +28,6 @@
     owner: "{{ system_user }}"
     group: "{{ system_user }}"
     mode: 0644
-  tags:
-    - deploy_compose
 
 - name: deploy WordPress Nginx virtual host
   template:
@@ -42,8 +36,6 @@
     owner: "{{ system_user }}"
     group: "{{ system_user }}"
     mode: 0644
-  tags:
-    - gen_nginx
 
 - name: creating adding static page
   template:
@@ -52,16 +44,8 @@
     owner: "{{ system_user }}"
     group: "{{ system_user }}"
     mode: 0644
-  tags:
-    - gen_wordpress
 
 - name: Run docker-compose up
   command: docker-compose -f docker-compose.yml up -d
   args:
     chdir: "{{ compose_project_dir }}"
-  tags:
-    - compose_run
-
-- name: giving some time for project (all 3 containers) to start-up
-  pause:
-    seconds: 10
