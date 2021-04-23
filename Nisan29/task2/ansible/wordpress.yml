@@ -43,5 +43,5 @@
       confirm: yes
 
   roles:
-  - docker
+  - avinetworks.docker
   - wordpress-docker
