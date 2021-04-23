@@ -14,7 +14,7 @@ mysql:
     ports:
       - '3306:3306'
     volumes:
-      - ./wp-db-data:/var/lib/mysql
+      - ./opt/docker/db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD={{ root_db_psw }}
       - MYSQL_DATABASE={{ wp_db_name }}
