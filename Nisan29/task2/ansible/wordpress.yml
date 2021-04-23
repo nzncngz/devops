@@ -29,12 +29,6 @@
       private: no
       default: "wordpress"
 
-    - name: wp_db_tb_pre
-      prompt: "\n------
-              \n\nWordPress table prefix"
-      private: no
-      default: "wp_"
-
     - name: wp_db_psw
       prompt: "\n------
               \n\nWordPress database password"
@@ -43,6 +37,7 @@
       confirm: yes
 
   roles:
+  - milad.ansible_role_install_docker_compose_ubuntu
   - avinetworks.docker
   - wordpress-docker
    
