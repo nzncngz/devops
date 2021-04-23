@@ -1,4 +1,6 @@
-#wp_version: 4.7.5
+---
+system_user: vagrant
+compose_project_dir: /home/{{ system_user }}/compose-wordpress
 root_db_psw: 123
 wp_version: 5.0.2
 wp_db_name: wordpress
