@@ -34,6 +34,13 @@ vm creating
 $ vagrant up &
 $ cd devops/Nisan29/task/ansible
 ```
+
+docker role with ansible galaxy
+
+``` bat
+$ cd cd roles
+$ sudo ansible-galaxy init docker
+```
 all application run  
 
 ``` bat  
