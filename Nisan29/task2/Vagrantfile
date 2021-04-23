@@ -1,16 +1,3 @@
-
-# -*- mode: ruby -*-
-# vi: set ft=ruby :
-
-# README
-#
-# Getting Started:
-# 1. vagrant plugin install vagrant-hostmanager
-# 2. vagrant up
-# 3. vagrant ssh
-#
-# This should put you at the control host
-#  with access, by name, to other vms
 Vagrant.configure(2) do |config|
   config.vm.define "control", primary: true do |h|
     h.vm.box = "ubuntu/focal64"
@@ -18,9 +5,7 @@ Vagrant.configure(2) do |config|
     h.vm.network "private_network", ip: "192.168.135.140"
     h.vm.network "forwarded_port", guest: 22, host: "2200", id: "ssh"
     h.vm.provision :shell, inline: "echo 'export ANSIBLE_CONFIG=/vagrant/ansible/ansible.cfg' >> /home/vagrant/.bash_profile"
-    h.vm.provision "shell" do |provision|
-      provision.path = "provision_ansible.sh"
-    end 
+    h.vm.provision :shell, inline: 'sudo apt-get update; sudo apt-get autoremove -y; sudo apt-add-repository -y ppa:ansible/ansible; sudo apt-get install -y ansible=2.9.6+dfsg-1 software-properties-common python3-setuptools python3-dev git python3-pip pip3 install "yamllint==1.25.0" "ansible-lint==4.3.7"'
     h.vm.provision :shell, :inline => <<'EOF'
 	if [ ! -f "/home/vagrant/.ssh/id_rsa" ]; then
   ssh-keygen -t rsa -N "" -f /home/vagrant/.ssh/id_rsa
