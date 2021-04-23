@@ -38,8 +38,8 @@ $ cd devops/Nisan29/task/ansible
 docker role with ansible galaxy
 
 ``` bat
-$ cd cd roles
-$ sudo ansible-galaxy init docker
+$ ansible-galaxy install -r requirements.yml
+
 ```
 all application run  
 
