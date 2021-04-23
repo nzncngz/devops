@@ -79,8 +79,7 @@ In incoming request if bootcamp = devops header it redirects to "Welcome Devops"
 
 https://github.com/bilalcaliskan/vagrant-ansible-lab/
 
-https://github.com/jamesattard/docker-ansible-wordpress
-
+https://www.happycoders.eu/devops/ansible-tutorial-setup-docker-mysql-wordpress/
 
 
 
