@@ -1,0 +1,13 @@
+---
+
+- name: Install docker role
+  become: true
+  hosts: all
+  roles:
+    - avinetworks.docker
+
+- name: Install docker-compose
+  become: true
+  hosts: all
+  roles:
+    - milad.ansible_role_install_docker_compose_ubuntu
