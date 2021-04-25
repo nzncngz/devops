@@ -1,0 +1,46 @@
+---
+- name: Create docker/wordpress directory
+  file:
+    path: /opt/docker/wordpress
+    state: directory
+    owner: "{{ system_user }}"
+    group: "{{ system_user }}"
+    mode: 0755
+
+- name: Create nginx directory
+  file:
+    path: /opt/docker/nginx
+    state: directory
+    owner: "{{ system_user }}"
+    group: "{{ system_user }}"
+    mode: 0755
+
+- name: Copy docker-compose file
+  template:
+    src: docker-compose.j2
+    dest: /opt/docker/docker-compose.yml
+    owner: "{{ system_user }}"
+    group: "{{ system_user }}"
+    mode: 0644
+
+- name: Copy nginx file
+  template:
+    src: wordpress-nginx.j2 
+    dest: /opt/docker/nginx/wordpress.conf
+    owner: "{{ system_user }}"
+    group: "{{ system_user }}"
+    mode: 0644
+
+- name: creating adding static page
+  template:
+    src: workshop.j2
+    dest: /opt/docker/wordpress/workshop.php"
+    owner: "{{ system_user }}"
+    group: "{{ system_user }}"
+    mode: 0644
+
+
+- name: Run docker-compose up
+  shell: docker-compose up -d
+  args:
+    chdir: /opt/docker/
