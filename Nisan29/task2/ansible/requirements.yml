@@ -1,6 +1,0 @@
----
-- src: milad.ansible_role_install_docker_compose_ubuntu
-  version: v1.0.2
-
-- src: avinetworks.docker
-  version: 2.3.0
